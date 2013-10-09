@@ -29,7 +29,7 @@ public class copyshort {
 
         try {
             String shorten = copyshort.sendPost(clip);
-            System.out.println(shorten);
+            //System.out.println(shorten);
             SystemClipboardDataManipulate.setClipboardData(shorten);
         } catch (Exception e) {
             System.out.println("copyshort error");
@@ -84,7 +84,7 @@ public class copyshort {
                 .getAsJsonObject()
                 .get("id")
                 .toString();
-        System.out.println(answer);
+        //System.out.println(answer);
         answer = answer.substring(1, answer.length() - 1);
         return answer;
     }
